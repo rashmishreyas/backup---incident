@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="46421" started-at="2019-06-12T07:07:36Z" finished-at="2019-06-12T07:08:23Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="46421" started-at="2019-06-12T07:07:36Z" finished-at="2019-06-12T07:08:23Z">
+      <class name="testcase.IncidentReport">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:testcase.IncidentReport@4bec1f0c]" name="startReport" is-config="true" duration-ms="472" started-at="2019-06-12T12:37:36Z" finished-at="2019-06-12T12:37:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="testCreateStandAloneIncidentTicket()[pri:0, instance:testcase.IncidentReport@4bec1f0c]" name="testCreateStandAloneIncidentTicket" duration-ms="45344" started-at="2019-06-12T12:37:37Z" description="Create standalone incident ticket" finished-at="2019-06-12T12:38:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateStandAloneIncidentTicket -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testcase.IncidentReport@4bec1f0c]" name="getResult" is-config="true" duration-ms="1" started-at="2019-06-12T12:38:22Z" finished-at="2019-06-12T12:38:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCreateStandAloneIncidentTicket status=SUCCESS method=IncidentReport.testCreateStandAloneIncidentTicket()[pri:0, instance:testcase.IncidentReport@4bec1f0c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:testcase.IncidentReport@4bec1f0c]" name="endReport" is-config="true" duration-ms="579" started-at="2019-06-12T12:38:22Z" finished-at="2019-06-12T12:38:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="FAIL" signature="afterSuite()[pri:0, instance:testcase.IncidentReport@4bec1f0c]" name="afterSuite" is-config="true" duration-ms="0" started-at="2019-06-12T12:38:23Z" finished-at="2019-06-12T12:38:23Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[javax.mail.AuthenticationFailedException: 535 5.7.3 Authentication unsuccessful [SN4PR0801CA0004.namprd08.prod.outlook.com]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: javax.mail.AuthenticationFailedException: 535 5.7.3 Authentication unsuccessful [SN4PR0801CA0004.namprd08.prod.outlook.com]
+
+	at testcase.IncidentReport.afterSuite(IncidentReport.java:575)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:308)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: javax.mail.AuthenticationFailedException: 535 5.7.3 Authentication unsuccessful [SN4PR0801CA0004.namprd08.prod.outlook.com]
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:965)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:876)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:780)
+	at javax.mail.Service.connect(Service.java:388)
+	at javax.mail.Service.connect(Service.java:246)
+	at javax.mail.Service.connect(Service.java:195)
+	at javax.mail.Transport.send0(Transport.java:254)
+	at javax.mail.Transport.send(Transport.java:124)
+	at testcase.IncidentReport.afterSuite(IncidentReport.java:570)
+	... 18 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- testcase.IncidentReport -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
